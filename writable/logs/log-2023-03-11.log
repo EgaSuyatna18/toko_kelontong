@@ -1,0 +1,954 @@
+ERROR - 2023-03-11 08:12:51 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-03-11 08:13:04 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-03-11 08:13:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-11 08:15:14 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-03-11 08:15:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:15:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:16:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:16:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:18:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:18:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:18:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:18:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:19:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:19:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:22:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:22:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SHOW TABLES FRO...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SHOW TABLES FRO...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-03-11 08:23:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'toko_kelontong' in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'toko_kelontong', 3306, '', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'toko_kelontong' in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-03-11 08:23:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'toko_kelontong' in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'toko_kelontong', 3306, '', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'toko_kelontong' in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-03-11 08:23:05 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'toko_kelontong' in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'toko_kelontong', 3306, '', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'toko_kelontong' in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(241): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-03-11 08:23:05 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'toko_kelontong' in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'toko_kelontong', 3306, '', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'toko_kelontong' in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#12 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-03-11 08:26:55 --> mysqli_sql_exception: Table 'toko_kelontong.users' doesn't exist in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\app\Database\Seeds\User.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\Seeder.php(146): App\Database\Seeds\User->run()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#9 {main}
+ERROR - 2023-03-11 08:27:00 --> mysqli_sql_exception: Table 'toko_kelontong.users' doesn't exist in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO use...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO use...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO use...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\app\Database\Seeds\User.php(11): CodeIgniter\Database\BaseConnection->query('INSERT INTO use...')
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\Seeder.php(146): App\Database\Seeds\User->run()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\spark(97): CodeIgniter\CLI\Console->run()
+#9 {main}
+CRITICAL - 2023-03-11 08:43:43 --> Class "App\Controllers\M_User" not found
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 08:44:03 --> Class "App\Controllers\App\Models\M_User" not found
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 08:44:12 --> Call to undefined function App\Controllers\App\Models\M_User()
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 08:44:58 --> Class "App\Controllers\App\Models\MUser" not found
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-11 08:47:50 --> mysqli_sql_exception: Table 'toko_kelontong.musers' doesn't exist in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\app\Controllers\Auth.php(20): CodeIgniter\BaseModel->first()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\PC\\Doc...')
+#12 {main}
+CRITICAL - 2023-03-11 08:47:50 --> Table 'toko_kelontong.musers' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `musers`
+WHERE `username` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Auth.php(20): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-11 08:48:06 --> mysqli_sql_exception: Table 'toko_kelontong.users' doesn't exist in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\app\Controllers\Auth.php(20): CodeIgniter\BaseModel->first()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\PC\\Doc...')
+#12 {main}
+CRITICAL - 2023-03-11 08:48:06 --> Table 'toko_kelontong.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Auth.php(20): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 08:49:10 --> Class "App\Models\MUser" not found
+in APPPATH\Controllers\Auth.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 08:49:24 --> Undefined variable $mUSer
+in APPPATH\Controllers\Auth.php on line 20.
+ 1 APPPATH\Controllers\Auth.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mUSer', 'APPPATH\\Controllers\\Auth.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 09:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 09:07:55 --> Undefined variable $session
+in APPPATH\Controllers\Auth.php on line 26.
+ 1 APPPATH\Controllers\Auth.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Auth.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 09:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 09:19:27 --> Invalid file: "layout.up"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.up')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout.up', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(11): view('layout.up')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:20:18 --> Invalid file: "layout.up"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.up')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout.up', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(11): view('layout.up')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 09:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:22:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 09:22:48 --> Cannot use object of type CodeIgniter\Session\Session as array
+in APPPATH\Controllers\Dashboard.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Dashboard->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 09:22:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:23:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:23:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:24:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 09:33:27 --> Invalid file: "layout.up"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.up')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('layout.up', [], true)
+ 3 APPPATH\Controllers\Barang.php(11): view('layout.up', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:37:02 --> Call to undefined function App\Models\BarangModel()
+in APPPATH\Controllers\Barang.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:37:19 --> Undefined variable $barangModel
+in APPPATH\Controllers\Barang.php on line 18.
+ 1 APPPATH\Controllers\Barang.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barangModel', 'APPPATH\\Controllers\\Barang.php', 18)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:39:32 --> Undefined variable $barangModel
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 APPPATH\Controllers\Barang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barangModel', 'APPPATH\\Controllers\\Barang.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:39:44 --> Call to a member function get() on null
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:40:23 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:41:17 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:41:17 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:42:05 --> Call to a member function get() on null
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:42:05 --> Call to a member function get() on null
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:42:21 --> Call to a member function where() on null
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+ERROR - 2023-03-11 09:43:10 --> mysqli_sql_exception: Unknown column 'barang_id' in 'where clause' in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\app\Controllers\Barang.php(20): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(934): App\Controllers\Barang->index()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\PC\\Doc...')
+#11 {main}
+CRITICAL - 2023-03-11 09:43:10 --> Unknown column 'barang_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+WHERE `barang_id` = :barang_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Barang.php(20): CodeIgniter\Model->__call('get', [])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:43:27 --> Array to string conversion
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 APPPATH\Controllers\Barang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Barang.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:43:28 --> Array to string conversion
+in APPPATH\Controllers\Barang.php on line 20.
+ 1 APPPATH\Controllers\Barang.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Barang.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:43:58 --> Call to a member function getResult() on array
+in APPPATH\Views\dashboard\barang.php on line 11.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:44:10 --> Call to a member function getResult() on array
+in APPPATH\Views\dashboard\barang.php on line 11.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:44:11 --> Call to a member function getResult() on array
+in APPPATH\Views\dashboard\barang.php on line 11.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:44:11 --> Call to a member function getResult() on array
+in APPPATH\Views\dashboard\barang.php on line 11.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 09:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 09:58:25 --> Call to undefined function validation()
+in APPPATH\Views\dashboard\barang.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 09:58:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 09:58:30 --> Call to undefined function validation()
+in APPPATH\Views\dashboard\barang.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:58:36 --> Call to undefined function validation()
+in APPPATH\Views\dashboard\barang.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:58:42 --> syntax error, unexpected token ";"
+in APPPATH\Views\dashboard\barang.php on line 2.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 3 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 09:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 09:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 09:59:05 --> Call to undefined function validation()
+in APPPATH\Views\dashboard\barang.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:59:13 --> Call to undefined method CodeIgniter\View\View::validation()
+in APPPATH\Views\dashboard\barang.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:59:30 --> Undefined variable $validation
+in APPPATH\Views\dashboard\barang.php on line 2.
+ 1 APPPATH\Views\dashboard\barang.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\dashboard\\barang.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\barang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 5 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-11 09:59:56 --> Call to undefined function services()
+in APPPATH\Views\dashboard\barang.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 4 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 10:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:00:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 10:01:59 --> Undefined array key "barang"
+in APPPATH\Views\dashboard\barang.php on line 19.
+ 1 APPPATH\Views\dashboard\barang.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "barang"', 'APPPATH\\Views\\dashboard\\barang.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\barang.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/barang', [], true)
+ 5 APPPATH\Controllers\Barang.php(19): view('dashboard/barang', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 10:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:04:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 10:06:32 --> Call to a member function delete() on string
+in APPPATH\Controllers\Barang.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->destroy()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 10:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:07:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-11 10:14:02 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Barang.php(65): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Barang->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-11 10:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:16:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-11 10:16:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

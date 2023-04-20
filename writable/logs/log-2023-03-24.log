@@ -1,0 +1,546 @@
+INFO - 2023-03-24 05:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 05:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-03-24 05:51:42 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'toko_kelontong', 3306, '', 0)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\app\Controllers\Auth.php(20): CodeIgniter\BaseModel->first()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\PC\\Doc...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\PC\Documents\project\ci\toko-kelontong\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\Users\PC\Documents\project\ci\toko-kelontong\app\Controllers\Auth.php(20): CodeIgniter\BaseModel->first()
+#6 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+#7 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 C:\Users\PC\Documents\project\ci\toko-kelontong\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\PC\Documents\project\ci\toko-kelontong\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\PC\Documents\project\ci\toko-kelontong\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\PC\\Doc...')
+#11 {main}
+CRITICAL - 2023-03-24 05:51:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `admin`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->tryLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 05:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:51:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:51:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:51:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:51:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:51:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:51:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:51:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:51:55 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:51:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:51:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:52:08 --> [DEPRECATED] Creation of dynamic property App\Controllers\Laporan::$transaksiModel is deprecated in APPPATH\Controllers\Laporan.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Laporan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-24 05:52:08 --> Undefined array key "print"
+in APPPATH\Views\dashboard\laporan.php on line 38.
+ 1 APPPATH\Views\dashboard\laporan.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "print"', 'APPPATH\\Views\\dashboard\\laporan.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('dashboard/laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(16): view('dashboard/laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:52:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Laporan::$transaksiModel is deprecated in APPPATH\Controllers\Laporan.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Laporan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:52:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:52:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Laporan::$transaksiModel is deprecated in APPPATH\Controllers\Laporan.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Laporan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:52:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\Laporan::$transaksiModel is deprecated in APPPATH\Controllers\Laporan.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Laporan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:52:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Laporan::$transaksiModel is deprecated in APPPATH\Controllers\Laporan.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Laporan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:53:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:53:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:53:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:53:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:53:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:53:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:53:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-24 05:53:32 --> Unsupported operand types: string * string
+in APPPATH\Controllers\Transaksi.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:53:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-03-24 05:53:40 --> Unsupported operand types: string * string
+in APPPATH\Controllers\Transaksi.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Transaksi->store()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:53:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:54:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:54:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:54:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 05:54:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 05:54:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 05:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 07:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 07:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 07:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 07:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:25:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:25:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:25:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:25:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:25:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:25:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:25:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:25:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 07:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 07:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 07:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 07:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:40:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:21 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:40:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:40:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:40:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:40:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:40:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:40:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$transaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$detailTransaksiModel is deprecated in APPPATH\Controllers\Transaksi.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Transaksi::$barangModel is deprecated in APPPATH\Controllers\Transaksi.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Transaksi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-03-24 07:40:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$barangModel is deprecated in APPPATH\Controllers\Barang.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+WARNING - 2023-03-24 07:40:33 --> [DEPRECATED] Creation of dynamic property App\Controllers\Barang::$detailBarangModel is deprecated in APPPATH\Controllers\Barang.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(906): App\Controllers\Barang->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+INFO - 2023-03-24 07:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:07:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:07:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-03-24 08:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
